@@ -1,0 +1,60 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collaborative Notes App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div id="auth-section">
+      <h2>Login</h2>
+      <form id="login-form">
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+      <p>Don't have an account? <span id="show-register">Register</span></p>
+    </div>
+
+    <div id="register-section" style="display:none;">
+      <h2>Register</h2>
+      <form id="register-form">
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="email" id="register-email" placeholder="Email" required>
+        <input type="password" id="register-password" placeholder="Password" required>
+        <button type="submit">Register</button>
+      </form>
+      <p>Already have an account? <span id="show-login">Login</span></p>
+    </div>
+
+    <div id="notes-section" style="display:none;">
+      <h2>Your Notes</h2>
+      <button id="create-note">Create New Note</button>
+      <div id="notes-list"></div>
+    </div>
+
+    <div id="create-note-section" style="display:none;">
+      <h2>Create a New Note</h2>
+      <form id="create-note-form">
+        <input type="text" id="note-title" placeholder="Title" required>
+        <textarea id="note-content" placeholder="Content" required></textarea>
+        <button type="submit">Create Note</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html> 
+
+ 
+
+
+
+  
+
+
+  
